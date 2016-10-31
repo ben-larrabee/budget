@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACE22D19B6EA9906B79541E0 /* Pods_EFAB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2026D2171AA19D008CA00B /* Pods_EFAB.framework */; };
 		C7A974691DC793AB00707EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A974681DC793AB00707EAD /* AppDelegate.swift */; };
 		C7A9746B1DC793AB00707EAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9746A1DC793AB00707EAD /* ViewController.swift */; };
 		C7A9746E1DC793AB00707EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A9746C1DC793AB00707EAD /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		349A0ED8E763566B2FA48FBB /* Pods-EFAB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFAB/Pods-EFAB.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A974651DC793AB00707EAD /* EFAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A974681DC793AB00707EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7A9746A1DC793AB00707EAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		C7A9746F1DC793AB00707EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7A974721DC793AB00707EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7A974741DC793AB00707EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4A2A0AE92D0D51F424F427 /* Pods-EFAB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAB.release.xcconfig"; path = "Pods/Target Support Files/Pods-EFAB/Pods-EFAB.release.xcconfig"; sourceTree = "<group>"; };
+		DC2026D2171AA19D008CA00B /* Pods_EFAB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFAB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE22D19B6EA9906B79541E0 /* Pods_EFAB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ED73F65EB980A0CDE40BEAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC2026D2171AA19D008CA00B /* Pods_EFAB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41757A0AF5068BCF5E01FA31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				349A0ED8E763566B2FA48FBB /* Pods-EFAB.debug.xcconfig */,
+				CC4A2A0AE92D0D51F424F427 /* Pods-EFAB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C7A9745C1DC793AB00707EAD = {
 			isa = PBXGroup;
 			children = (
 				C7A974671DC793AB00707EAD /* EFAB */,
 				C7A974661DC793AB00707EAD /* Products */,
+				41757A0AF5068BCF5E01FA31 /* Pods */,
+				0ED73F65EB980A0CDE40BEAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7A974771DC793AB00707EAD /* Build configuration list for PBXNativeTarget "EFAB" */;
 			buildPhases = (
+				D66586BCB1AFE77A53D7B849 /* [CP] Check Pods Manifest.lock */,
 				C7A974611DC793AB00707EAD /* Sources */,
 				C7A974621DC793AB00707EAD /* Frameworks */,
 				C7A974631DC793AB00707EAD /* Resources */,
+				60EA4A11A9D60402F03179D2 /* [CP] Embed Pods Frameworks */,
+				C5EA7706E334937DD9F4883E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60EA4A11A9D60402F03179D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EFAB/Pods-EFAB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5EA7706E334937DD9F4883E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EFAB/Pods-EFAB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D66586BCB1AFE77A53D7B849 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7A974611DC793AB00707EAD /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		C7A974781DC793AB00707EAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349A0ED8E763566B2FA48FBB /* Pods-EFAB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EFAB/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		C7A974791DC793AB00707EAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC4A2A0AE92D0D51F424F427 /* Pods-EFAB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EFAB/Info.plist;
