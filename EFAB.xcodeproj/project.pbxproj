@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ACE22D19B6EA9906B79541E0 /* Pods_EFAB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2026D2171AA19D008CA00B /* Pods_EFAB.framework */; };
+		C777247D1DC7BB4D0079B0FC /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C777247C1DC7BB4D0079B0FC /* NetworkModel.swift */; };
+		C777247F1DC7BEB60079B0FC /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C777247E1DC7BEB60079B0FC /* WebServices.swift */; };
 		C7A974691DC793AB00707EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A974681DC793AB00707EAD /* AppDelegate.swift */; };
 		C7A9746B1DC793AB00707EAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9746A1DC793AB00707EAD /* ViewController.swift */; };
 		C7A9746E1DC793AB00707EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A9746C1DC793AB00707EAD /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		349A0ED8E763566B2FA48FBB /* Pods-EFAB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFAB/Pods-EFAB.debug.xcconfig"; sourceTree = "<group>"; };
+		C777247C1DC7BB4D0079B0FC /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkModel.swift; path = Networking/NetworkModel.swift; sourceTree = "<group>"; };
+		C777247E1DC7BEB60079B0FC /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServices.swift; path = Networking/WebServices.swift; sourceTree = "<group>"; };
 		C7A974651DC793AB00707EAD /* EFAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A974681DC793AB00707EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7A9746A1DC793AB00707EAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C777247B1DC7BACD0079B0FC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C777247C1DC7BB4D0079B0FC /* NetworkModel.swift */,
+				C777247E1DC7BEB60079B0FC /* WebServices.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		C7A9745C1DC793AB00707EAD = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +91,7 @@
 		C7A974671DC793AB00707EAD /* EFAB */ = {
 			isa = PBXGroup;
 			children = (
+				C777247B1DC7BACD0079B0FC /* Networking */,
 				C7A974681DC793AB00707EAD /* AppDelegate.swift */,
 				C7A9746A1DC793AB00707EAD /* ViewController.swift */,
 				C7A9746C1DC793AB00707EAD /* Main.storyboard */,
@@ -201,7 +215,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -211,7 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C777247D1DC7BB4D0079B0FC /* NetworkModel.swift in Sources */,
 				C7A9746B1DC793AB00707EAD /* ViewController.swift in Sources */,
+				C777247F1DC7BEB60079B0FC /* WebServices.swift in Sources */,
 				C7A974691DC793AB00707EAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +390,7 @@
 				C7A974791DC793AB00707EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
