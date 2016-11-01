@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ACE22D19B6EA9906B79541E0 /* Pods_EFAB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2026D2171AA19D008CA00B /* Pods_EFAB.framework */; };
+		C72B349A1DC90A53007B4BBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72B34991DC90A53007B4BBF /* MapKit.framework */; };
 		C777247D1DC7BB4D0079B0FC /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C777247C1DC7BB4D0079B0FC /* NetworkModel.swift */; };
 		C777247F1DC7BEB60079B0FC /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C777247E1DC7BEB60079B0FC /* WebServices.swift */; };
 		C77724821DC7C8910079B0FC /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77724811DC7C8910079B0FC /* Test.swift */; };
@@ -22,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		349A0ED8E763566B2FA48FBB /* Pods-EFAB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFAB/Pods-EFAB.debug.xcconfig"; sourceTree = "<group>"; };
+		C72B34981DC909C5007B4BBF /* EFAB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EFAB.entitlements; sourceTree = "<group>"; };
+		C72B34991DC90A53007B4BBF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C777247C1DC7BB4D0079B0FC /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkModel.swift; path = Networking/NetworkModel.swift; sourceTree = "<group>"; };
 		C777247E1DC7BEB60079B0FC /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServices.swift; path = Networking/WebServices.swift; sourceTree = "<group>"; };
 		C77724811DC7C8910079B0FC /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Test.swift; path = Models/Test.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72B349A1DC90A53007B4BBF /* MapKit.framework in Frameworks */,
 				ACE22D19B6EA9906B79541E0 /* Pods_EFAB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +58,7 @@
 		0ED73F65EB980A0CDE40BEAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C72B34991DC90A53007B4BBF /* MapKit.framework */,
 				DC2026D2171AA19D008CA00B /* Pods_EFAB.framework */,
 			);
 			name = Frameworks;
@@ -115,6 +120,7 @@
 		C7A974671DC793AB00707EAD /* EFAB */ = {
 			isa = PBXGroup;
 			children = (
+				C72B34981DC909C5007B4BBF /* EFAB.entitlements */,
 				C77724831DC7CB4F0079B0FC /* Components */,
 				C77724801DC7C8660079B0FC /* Models */,
 				C777247B1DC7BACD0079B0FC /* Networking */,
@@ -164,8 +170,17 @@
 				TargetAttributes = {
 					C7A974641DC793AB00707EAD = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = ZNYDH23S9S;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -382,6 +397,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EFAB/EFAB.entitlements;
+				DEVELOPMENT_TEAM = ZNYDH23S9S;
 				INFOPLIST_FILE = EFAB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.interapt.EFAB;
@@ -398,6 +415,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EFAB/EFAB.entitlements;
+				DEVELOPMENT_TEAM = ZNYDH23S9S;
 				INFOPLIST_FILE = EFAB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.interapt.EFAB;
