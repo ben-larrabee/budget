@@ -17,6 +17,7 @@
 		C7A9746E1DC793AB00707EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A9746C1DC793AB00707EAD /* Main.storyboard */; };
 		C7A974701DC793AB00707EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A9746F1DC793AB00707EAD /* Assets.xcassets */; };
 		C7A974731DC793AB00707EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A974711DC793AB00707EAD /* LaunchScreen.storyboard */; };
+		C7BCCB371DC8D5A2003C1CC7 /* WebServicesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCCB361DC8D5A2003C1CC7 /* WebServicesExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		C777247E1DC7BEB60079B0FC /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServices.swift; path = Networking/WebServices.swift; sourceTree = "<group>"; };
 		C77724811DC7C8910079B0FC /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Test.swift; path = Models/Test.swift; sourceTree = "<group>"; };
 		C77724841DC7CB700079B0FC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Components/Constants.swift; sourceTree = "<group>"; };
+		C77724861DC7E0430079B0FC /* EFAB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EFAB-Bridging-Header.h"; sourceTree = "<group>"; };
 		C7A974651DC793AB00707EAD /* EFAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A974681DC793AB00707EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7A9746A1DC793AB00707EAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +34,7 @@
 		C7A9746F1DC793AB00707EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7A974721DC793AB00707EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7A974741DC793AB00707EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7BCCB361DC8D5A2003C1CC7 /* WebServicesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServicesExtension.swift; path = Networking/WebServicesExtension.swift; sourceTree = "<group>"; };
 		CC4A2A0AE92D0D51F424F427 /* Pods-EFAB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAB.release.xcconfig"; path = "Pods/Target Support Files/Pods-EFAB/Pods-EFAB.release.xcconfig"; sourceTree = "<group>"; };
 		DC2026D2171AA19D008CA00B /* Pods_EFAB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFAB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +73,7 @@
 			children = (
 				C777247C1DC7BB4D0079B0FC /* NetworkModel.swift */,
 				C777247E1DC7BEB60079B0FC /* WebServices.swift */,
+				C7BCCB361DC8D5A2003C1CC7 /* WebServicesExtension.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -120,6 +124,7 @@
 				C7A9746F1DC793AB00707EAD /* Assets.xcassets */,
 				C7A974711DC793AB00707EAD /* LaunchScreen.storyboard */,
 				C7A974741DC793AB00707EAD /* Info.plist */,
+				C77724861DC7E0430079B0FC /* EFAB-Bridging-Header.h */,
 			);
 			path = EFAB;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				TargetAttributes = {
 					C7A974641DC793AB00707EAD = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -250,6 +256,7 @@
 				C777247D1DC7BB4D0079B0FC /* NetworkModel.swift in Sources */,
 				C7A9746B1DC793AB00707EAD /* ViewController.swift in Sources */,
 				C77724821DC7C8910079B0FC /* Test.swift in Sources */,
+				C7BCCB371DC8D5A2003C1CC7 /* WebServicesExtension.swift in Sources */,
 				C777247F1DC7BEB60079B0FC /* WebServices.swift in Sources */,
 				C7A974691DC793AB00707EAD /* AppDelegate.swift in Sources */,
 				C77724851DC7CB700079B0FC /* Constants.swift in Sources */,
@@ -374,10 +381,13 @@
 			baseConfigurationReference = 349A0ED8E763566B2FA48FBB /* Pods-EFAB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = EFAB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.interapt.EFAB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EFAB/EFAB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -387,10 +397,12 @@
 			baseConfigurationReference = CC4A2A0AE92D0D51F424F427 /* Pods-EFAB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = EFAB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.interapt.EFAB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EFAB/EFAB-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
