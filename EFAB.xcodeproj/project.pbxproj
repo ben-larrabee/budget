@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		ACE22D19B6EA9906B79541E0 /* Pods_EFAB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2026D2171AA19D008CA00B /* Pods_EFAB.framework */; };
 		C72B349A1DC90A53007B4BBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72B34991DC90A53007B4BBF /* MapKit.framework */; };
+		C72B349D1DC92070007B4BBF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72B349C1DC92070007B4BBF /* Login.storyboard */; };
+		C72B34A01DC92E78007B4BBF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72B349F1DC92E78007B4BBF /* LoginViewController.swift */; };
+		C72B34A21DC92E99007B4BBF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72B34A11DC92E99007B4BBF /* RegisterViewController.swift */; };
+		C72B34A41DC92EC0007B4BBF /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72B34A31DC92EC0007B4BBF /* BudgetViewController.swift */; };
 		C777247D1DC7BB4D0079B0FC /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C777247C1DC7BB4D0079B0FC /* NetworkModel.swift */; };
 		C777247F1DC7BEB60079B0FC /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C777247E1DC7BEB60079B0FC /* WebServices.swift */; };
 		C77724821DC7C8910079B0FC /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77724811DC7C8910079B0FC /* Test.swift */; };
@@ -25,6 +29,10 @@
 		349A0ED8E763566B2FA48FBB /* Pods-EFAB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFAB/Pods-EFAB.debug.xcconfig"; sourceTree = "<group>"; };
 		C72B34981DC909C5007B4BBF /* EFAB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EFAB.entitlements; sourceTree = "<group>"; };
 		C72B34991DC90A53007B4BBF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C72B349C1DC92070007B4BBF /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
+		C72B349F1DC92E78007B4BBF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
+		C72B34A11DC92E99007B4BBF /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ViewControllers/RegisterViewController.swift; sourceTree = "<group>"; };
+		C72B34A31DC92EC0007B4BBF /* BudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BudgetViewController.swift; path = ViewControllers/BudgetViewController.swift; sourceTree = "<group>"; };
 		C777247C1DC7BB4D0079B0FC /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkModel.swift; path = Networking/NetworkModel.swift; sourceTree = "<group>"; };
 		C777247E1DC7BEB60079B0FC /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServices.swift; path = Networking/WebServices.swift; sourceTree = "<group>"; };
 		C77724811DC7C8910079B0FC /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Test.swift; path = Models/Test.swift; sourceTree = "<group>"; };
@@ -73,6 +81,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C72B349B1DC92029007B4BBF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C72B349C1DC92070007B4BBF /* Login.storyboard */,
+				C7A9746C1DC793AB00707EAD /* Main.storyboard */,
+				C7A974711DC793AB00707EAD /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			path = EFAB;
+			sourceTree = "<group>";
+		};
+		C72B349E1DC92E4C007B4BBF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C72B349F1DC92E78007B4BBF /* LoginViewController.swift */,
+				C72B34A11DC92E99007B4BBF /* RegisterViewController.swift */,
+				C72B34A31DC92EC0007B4BBF /* BudgetViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		C777247B1DC7BACD0079B0FC /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				C7A974671DC793AB00707EAD /* EFAB */,
+				C72B349B1DC92029007B4BBF /* Storyboards */,
 				C7A974661DC793AB00707EAD /* Products */,
 				41757A0AF5068BCF5E01FA31 /* Pods */,
 				0ED73F65EB980A0CDE40BEAB /* Frameworks */,
@@ -120,15 +150,14 @@
 		C7A974671DC793AB00707EAD /* EFAB */ = {
 			isa = PBXGroup;
 			children = (
+				C72B349E1DC92E4C007B4BBF /* ViewControllers */,
 				C72B34981DC909C5007B4BBF /* EFAB.entitlements */,
 				C77724831DC7CB4F0079B0FC /* Components */,
 				C77724801DC7C8660079B0FC /* Models */,
 				C777247B1DC7BACD0079B0FC /* Networking */,
 				C7A974681DC793AB00707EAD /* AppDelegate.swift */,
 				C7A9746A1DC793AB00707EAD /* ViewController.swift */,
-				C7A9746C1DC793AB00707EAD /* Main.storyboard */,
 				C7A9746F1DC793AB00707EAD /* Assets.xcassets */,
-				C7A974711DC793AB00707EAD /* LaunchScreen.storyboard */,
 				C7A974741DC793AB00707EAD /* Info.plist */,
 				C77724861DC7E0430079B0FC /* EFAB-Bridging-Header.h */,
 			);
@@ -207,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72B349D1DC92070007B4BBF /* Login.storyboard in Resources */,
 				C7A974731DC793AB00707EAD /* LaunchScreen.storyboard in Resources */,
 				C7A974701DC793AB00707EAD /* Assets.xcassets in Resources */,
 				C7A9746E1DC793AB00707EAD /* Main.storyboard in Resources */,
@@ -268,11 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72B34A21DC92E99007B4BBF /* RegisterViewController.swift in Sources */,
 				C777247D1DC7BB4D0079B0FC /* NetworkModel.swift in Sources */,
 				C7A9746B1DC793AB00707EAD /* ViewController.swift in Sources */,
 				C77724821DC7C8910079B0FC /* Test.swift in Sources */,
 				C7BCCB371DC8D5A2003C1CC7 /* WebServicesExtension.swift in Sources */,
+				C72B34A01DC92E78007B4BBF /* LoginViewController.swift in Sources */,
 				C777247F1DC7BEB60079B0FC /* WebServices.swift in Sources */,
+				C72B34A41DC92EC0007B4BBF /* BudgetViewController.swift in Sources */,
 				C7A974691DC793AB00707EAD /* AppDelegate.swift in Sources */,
 				C77724851DC7CB700079B0FC /* Constants.swift in Sources */,
 			);
