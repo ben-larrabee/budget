@@ -29,6 +29,7 @@
 		C7ED417D1DCA6788008364C4 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED417C1DCA6788008364C4 /* CategoryTableViewCell.swift */; };
 		C7ED417F1DCA6DE7008364C4 /* AddCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED417E1DCA6DE7008364C4 /* AddCategoryVC.swift */; };
 		C7ED41811DCA7204008364C4 /* ExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED41801DCA7204008364C4 /* ExpenseVC.swift */; };
+		C7ED41831DCA805D008364C4 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED41821DCA805D008364C4 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		C7ED417C1DCA6788008364C4 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = "Table Cells/CategoryTableViewCell.swift"; sourceTree = "<group>"; };
 		C7ED417E1DCA6DE7008364C4 /* AddCategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddCategoryVC.swift; path = ViewControllers/AddCategoryVC.swift; sourceTree = "<group>"; };
 		C7ED41801DCA7204008364C4 /* ExpenseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpenseVC.swift; path = ViewControllers/ExpenseVC.swift; sourceTree = "<group>"; };
+		C7ED41821DCA805D008364C4 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = Models/Category.swift; sourceTree = "<group>"; };
 		CC4A2A0AE92D0D51F424F427 /* Pods-EFAB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAB.release.xcconfig"; path = "Pods/Target Support Files/Pods-EFAB/Pods-EFAB.release.xcconfig"; sourceTree = "<group>"; };
 		DC2026D2171AA19D008CA00B /* Pods_EFAB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFAB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 			children = (
 				C77724811DC7C8910079B0FC /* Test.swift */,
 				C7ED41571DCA205F008364C4 /* User.swift */,
+				C7ED41821DCA805D008364C4 /* Category.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				C72B34A41DC92EC0007B4BBF /* BudgetViewController.swift in Sources */,
 				C7A974691DC793AB00707EAD /* AppDelegate.swift in Sources */,
 				C77724851DC7CB700079B0FC /* Constants.swift in Sources */,
+				C7ED41831DCA805D008364C4 /* Category.swift in Sources */,
 				C7ED41811DCA7204008364C4 /* ExpenseVC.swift in Sources */,
 				C7ED41581DCA205F008364C4 /* User.swift in Sources */,
 				C7ED417D1DCA6788008364C4 /* CategoryTableViewCell.swift in Sources */,
