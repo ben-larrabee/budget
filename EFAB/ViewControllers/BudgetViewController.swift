@@ -20,8 +20,10 @@ class BudgetViewController: UIViewController {
     super.viewDidAppear(animated)
     
     if !WebServices.shared.userAuthTokenExists() || WebServices.shared.userAuthTokenExpired() {
+      
       performSegue(withIdentifier: "PresentLoginNoAnimation", sender: self)      
     }
+
   }
   
   /*
@@ -33,5 +35,12 @@ class BudgetViewController: UIViewController {
    // Pass the selected object to the new view controller.
    }
    */
+  // MARK: - IBActions
+  
+  @IBAction func logoutTapped(_ sender: UIBarButtonItem) {
+    UserStore.shared.logout {
+      self.performSegue(withIdentifier: "PresentLogin", sender: self)
+    }
+  }
   
 }
