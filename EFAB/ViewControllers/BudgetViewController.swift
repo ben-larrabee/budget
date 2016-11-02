@@ -9,6 +9,14 @@
 import UIKit
 
 class BudgetViewController: UIViewController {
+  @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var dateLabel: UILabel!
+  @IBOutlet weak var timeControl: UISegmentedControl!
+  @IBOutlet weak var backButton: UIButton!
+  @IBOutlet weak var forwardButton: UIButton!
+  
+  
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -42,6 +50,16 @@ class BudgetViewController: UIViewController {
       self.performSegue(withIdentifier: "PresentLogin", sender: self)
     }
   }
+  
+  @IBAction func backButtonTapped(_ sender: UIButton) {
+  }
+  
+  @IBAction func forwardButtonTapped(_ sender: UIButton) {
+  }
+  
+  @IBAction func timePeriodChanged(_ sender: UISegmentedControl) {
+  }
+  
   
 }
 
