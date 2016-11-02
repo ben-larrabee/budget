@@ -26,6 +26,9 @@
 		C7ED41581DCA205F008364C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED41571DCA205F008364C4 /* User.swift */; };
 		C7ED415A1DCA2E23008364C4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED41591DCA2E23008364C4 /* Utils.swift */; };
 		C7ED415C1DCA355A008364C4 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED415B1DCA355A008364C4 /* UserStore.swift */; };
+		C7ED417D1DCA6788008364C4 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED417C1DCA6788008364C4 /* CategoryTableViewCell.swift */; };
+		C7ED417F1DCA6DE7008364C4 /* AddCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED417E1DCA6DE7008364C4 /* AddCategoryVC.swift */; };
+		C7ED41811DCA7204008364C4 /* ExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED41801DCA7204008364C4 /* ExpenseVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		C7ED41571DCA205F008364C4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		C7ED41591DCA2E23008364C4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Components/Utils.swift; sourceTree = "<group>"; };
 		C7ED415B1DCA355A008364C4 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserStore.swift; path = Components/UserStore.swift; sourceTree = "<group>"; };
+		C7ED417C1DCA6788008364C4 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = "Table Cells/CategoryTableViewCell.swift"; sourceTree = "<group>"; };
+		C7ED417E1DCA6DE7008364C4 /* AddCategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddCategoryVC.swift; path = ViewControllers/AddCategoryVC.swift; sourceTree = "<group>"; };
+		C7ED41801DCA7204008364C4 /* ExpenseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpenseVC.swift; path = ViewControllers/ExpenseVC.swift; sourceTree = "<group>"; };
 		CC4A2A0AE92D0D51F424F427 /* Pods-EFAB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAB.release.xcconfig"; path = "Pods/Target Support Files/Pods-EFAB/Pods-EFAB.release.xcconfig"; sourceTree = "<group>"; };
 		DC2026D2171AA19D008CA00B /* Pods_EFAB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFAB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +110,8 @@
 				C72B349F1DC92E78007B4BBF /* LoginViewController.swift */,
 				C72B34A11DC92E99007B4BBF /* RegisterViewController.swift */,
 				C72B34A31DC92EC0007B4BBF /* BudgetViewController.swift */,
+				C7ED417E1DCA6DE7008364C4 /* AddCategoryVC.swift */,
+				C7ED41801DCA7204008364C4 /* ExpenseVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 		C7A974671DC793AB00707EAD /* EFAB */ = {
 			isa = PBXGroup;
 			children = (
+				C7ED417B1DCA674F008364C4 /* Table Cells */,
 				C72B349E1DC92E4C007B4BBF /* ViewControllers */,
 				C72B34981DC909C5007B4BBF /* EFAB.entitlements */,
 				C77724831DC7CB4F0079B0FC /* Components */,
@@ -171,6 +180,14 @@
 				C77724861DC7E0430079B0FC /* EFAB-Bridging-Header.h */,
 			);
 			path = EFAB;
+			sourceTree = "<group>";
+		};
+		C7ED417B1DCA674F008364C4 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C7ED417C1DCA6788008364C4 /* CategoryTableViewCell.swift */,
+			);
+			name = "Table Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,11 +330,14 @@
 				C77724821DC7C8910079B0FC /* Test.swift in Sources */,
 				C7BCCB371DC8D5A2003C1CC7 /* WebServicesExtension.swift in Sources */,
 				C72B34A01DC92E78007B4BBF /* LoginViewController.swift in Sources */,
+				C7ED417F1DCA6DE7008364C4 /* AddCategoryVC.swift in Sources */,
 				C777247F1DC7BEB60079B0FC /* WebServices.swift in Sources */,
 				C72B34A41DC92EC0007B4BBF /* BudgetViewController.swift in Sources */,
 				C7A974691DC793AB00707EAD /* AppDelegate.swift in Sources */,
 				C77724851DC7CB700079B0FC /* Constants.swift in Sources */,
+				C7ED41811DCA7204008364C4 /* ExpenseVC.swift in Sources */,
 				C7ED41581DCA205F008364C4 /* User.swift in Sources */,
+				C7ED417D1DCA6788008364C4 /* CategoryTableViewCell.swift in Sources */,
 				C7ED415A1DCA2E23008364C4 /* Utils.swift in Sources */,
 				C7ED415C1DCA355A008364C4 /* UserStore.swift in Sources */,
 			);
