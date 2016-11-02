@@ -15,12 +15,14 @@ class BudgetViewController: UIViewController {
   @IBOutlet weak var backButton: UIButton!
   @IBOutlet weak var forwardButton: UIButton!
   
-  
-  
+  let refreshControl = UIRefreshControl()
+  var currentDate = Utils.adjustedTime()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
+    refreshControl.addTarget(self, action: #selector(BudgetViewController.loadCategories), for: .valueChanged)
+    tableView.addSubview(refreshControl)
     
   }
   
@@ -32,6 +34,10 @@ class BudgetViewController: UIViewController {
       performSegue(withIdentifier: "PresentLoginNoAnimation", sender: self)      
     }
 
+  }
+  
+  func loadCategories() {
+    self.refreshControl.endRefreshing()
   }
   
   /*
